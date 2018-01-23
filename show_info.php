@@ -8,9 +8,8 @@
     if ($result) {
         
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-            echo "ลำดับ : ". $row['info_id']."<br>";
-            echo "ชื่อ : ". $row['info_name']. "<br>";
-            echo "e-mail : " . $row['info_email']. "<br>";
+            echo "รหัส : ". $row['info_id']."<br>";
+            echo "ชื่อสินค้า : ". $row['info_name']. "<br>";
             echo "<hr>";
         }
 

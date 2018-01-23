@@ -1,10 +1,9 @@
 <?php
     require 'connectdb.php';
 
-    $info_name = 'ปธิทาน';
-    $info_email = 'boatdk@gmail.com';
+    $info_name = 'หมวก';
 
-    $query = "INSERT INTO infotype (info_id , info_name,info_email) VALUES ('','$info_name','$info_email') ";
+    $query = "INSERT INTO infotype (info_id , info_name) VALUES ('','$info_name') ";
 
     $result = mysqli_query($dbcon, $query);
 

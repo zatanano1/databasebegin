@@ -25,9 +25,8 @@
     <table style="width: 600px">
             <!-- row 1 -->
         <tr>
-            <th>ลำดับ</th>
+            <th>รหัสสินค้า</th>
             <th>ชื่อ</th>
-            <th>e-mail</th>
         </tr>
             <?php
                 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -37,7 +36,6 @@
             <tr>
                 <td><?php echo $row['info_id']; ?></td>
                 <td><?php echo $row['info_name'];  ?></td>
-                <td><?php echo $row['info_email'];  ?></td>
             </tr>
                 <?php  }   
                         //close database
